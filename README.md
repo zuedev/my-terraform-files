@@ -1,8 +1,8 @@
 ![](.gitlab/repoImage.png)
 
-# terraform
+# my-terraform-files
 
-This repository contains the Terraform configuration files I use for my personal projects.
+This repository contains my personal [Terraform](https://www.terraform.io/) configuration files.
 
 ## Development
 
@@ -10,8 +10,8 @@ This repository contains the Terraform configuration files I use for my personal
 
 This repository uses mirrors!
 
-The primary host is: https://gitlab.sovereign.zue.dev/zuedev/terraform
+The primary host is: https://gitlab.sovereign.zue.dev/zuedev/my-terraform-files
 
 Official mirrors are:
 
-- **GitHub:** https://github.com/zuedev/terraform
+- **GitHub:** https://github.com/zuedev/my-terraform-files
