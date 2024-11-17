@@ -1,4 +1,4 @@
-![](.gitlab/repoImage.png)
+<img src=".gitlab/repoImage.png" height="100"/>
 
 # my-terraform-files
 
