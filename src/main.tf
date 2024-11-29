@@ -8,6 +8,10 @@ terraform {
       source  = "gitlabhq/gitlab"
       version = "17.6.1"
     }
+    aws = {
+      source  = "hashicorp/aws"
+      version = "5.78.0"
+    }
   }
 
   cloud {
