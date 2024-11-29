@@ -4,7 +4,7 @@ data "cloudflare_zones" "zue-dot-dev" {
   }
 }
 
-resource "cloudflare_record" "zue-dot-dev_aws_ns_1" {
+resource "cloudflare_dns_record" "zue-dot-dev_aws_ns_1" {
   zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
 
   comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
@@ -16,7 +16,7 @@ resource "cloudflare_record" "zue-dot-dev_aws_ns_1" {
   allow_overwrite = true
 }
 
-resource "cloudflare_record" "zue-dot-dev_aws_ns_2" {
+resource "cloudflare_dns_record" "zue-dot-dev_aws_ns_2" {
   zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
 
   comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
@@ -28,7 +28,7 @@ resource "cloudflare_record" "zue-dot-dev_aws_ns_2" {
   allow_overwrite = true
 }
 
-resource "cloudflare_record" "zue-dot-dev_aws_ns_3" {
+resource "cloudflare_dns_record" "zue-dot-dev_aws_ns_3" {
   zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
 
   comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
@@ -40,7 +40,7 @@ resource "cloudflare_record" "zue-dot-dev_aws_ns_3" {
   allow_overwrite = true
 }
 
-resource "cloudflare_record" "zue-dot-dev_aws_ns_4" {
+resource "cloudflare_dns_record" "zue-dot-dev_aws_ns_4" {
   zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
 
   comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"

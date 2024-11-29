@@ -2,7 +2,7 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 4.0"
+      version = "5.0.0-alpha1"
     }
   }
 
@@ -10,7 +10,7 @@ terraform {
     organization = "zuedev"
 
     workspaces {
-      name = "gitlab-sovereign-zue-dev_zuedev_my-terraform-files"
+      name = "my-terraform-files"
     }
   }
 }
