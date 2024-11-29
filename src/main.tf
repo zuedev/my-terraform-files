@@ -4,6 +4,10 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "~> 4.0"
     }
+    gitlab = {
+      source = "gitlabhq/gitlab"
+      version = "17.6.1"
+    }
   }
 
   cloud {
