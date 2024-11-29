@@ -51,39 +51,3 @@ resource "cloudflare_record" "zue-dot-dev_aws_ns_4" {
 
   allow_overwrite = true
 }
-
-resource "cloudflare_record" "zue-dot-dev_hetzner_ns_1" {
-  zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
-
-  comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
-
-  type    = "NS"
-  name    = "hetzner.zue.dev"
-  content   = "helium.ns.hetzner.de"
-
-  allow_overwrite = true
-}
-
-resource "cloudflare_record" "zue-dot-dev_hetzner_ns_2" {
-  zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
-
-  comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
-
-  type    = "NS"
-  name    = "hetzner.zue.dev"
-  content   = "hydrogen.ns.hetzner.com"
-
-  allow_overwrite = true
-}
-
-resource "cloudflare_record" "zue-dot-dev_hetzner_ns_3" {
-  zone_id = data.cloudflare_zones.zue-dot-dev.zones.0.id
-
-  comment = "TF-${formatdate("YYMMDDhhmmss", timestamp())}"
-
-  type    = "NS"
-  name    = "hetzner.zue.dev"
-  content   = "oxygen.ns.hetzner.com"
-
-  allow_overwrite = true
-}
