@@ -1,6 +1,7 @@
-resource "gitlab_project" "gitlab_mirror_my-terraform-files" {
-  name             = "my-terraform-files"
-  import_url       = "https://github.com/zuedev/my-terraform-files.git"
+resource "gitlab_project" "gitlab_mirrors_zuedev" {
+  for_each         = toset(["my-terraform-files", "my-opentofu-files"])
+  name             = each.key
+  import_url       = "https://github.com/zuedev/${each.key}.git"
   mirror           = true
   visibility_level = "public"
 }
