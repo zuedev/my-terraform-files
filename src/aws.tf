@@ -13,15 +13,3 @@ provider "aws" {
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
 }
-
-resource "aws_route53_health_check" "zue-dot-dev" {
-  fqdn             = "zue.dev"
-  type             = "HTTPS"
-  port             = 443
-  request_interval = "30"
-  measure_latency  = true
-
-  tags = {
-    Name = "tf-zue-dot-dev"
-  }
-}
